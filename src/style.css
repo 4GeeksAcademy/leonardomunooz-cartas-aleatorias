@@ -1,1 +1,40 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-color: green;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  height: 100%;
+  /* border: solid red 1px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-content {
+  width: 400px;
+  height: 600px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 25px;
+}
+.card {
+  font-size: 150px;
+}
+.fas {
+  font-size: 100px;
+}
+.numero-carta p {
+  font-size: 150px;
+  margin: 0;
+}
+.numero-carta {
+  align-self: center;
+}
+.palo-inf-carta {
+  align-self: flex-end;
+}
+/* .palo-sup-carta,
+.numero-carta,
+.palo-inf-carta {
+  border: solid black 1px;
+} */
