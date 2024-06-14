@@ -4,14 +4,13 @@ import "./style.css";
 
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
-
 window.onload = function() {
   let body = document.querySelector("body");
   let card = document.querySelector("#card");
   let flexCard = document.createElement("div");
   let cTop = document.createElement("div");
   let iconTop = document.createElement("i");
-  let number = Math.floor(Math.random() * 5);
+  let number = Math.ceil(Math.random() * 4);
   let p = document.createElement("p");
   let cBottom = document.createElement("div");
   let iconBottom = document.createElement("i");
