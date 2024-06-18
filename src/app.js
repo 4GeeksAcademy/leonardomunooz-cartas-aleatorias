@@ -14,9 +14,6 @@ window.onload = function() {
   let p = document.createElement("p");
   let cBottom = document.createElement("div");
   let iconBottom = document.createElement("i");
-
-  console.log(body);
-
   // estilos del boby y centrado de la carta
   body.style.backgroundColor = "green";
   body.style.display = "flex";
@@ -48,7 +45,16 @@ window.onload = function() {
   let palo = getPalo(palos, palosNumber);
   let carta = getPalo(cartas, numeroCarta);
 
-  console.log(carta);
+  function isRedCard(palo, element1, element2, element3 = undefined) {
+    if (palo == "♦" || palo == "♥") {
+      element1.style.color = "Red";
+      element2.style.color = "red";
+      element3.style.color = "red";
+    }
+  }
+  console.log(palo);
+
+  isRedCard(palo, iconTop, iconBottom, p);
   cTop.append(iconTop);
   iconTop.textContent = palo;
   iconTop.setAttribute("class", "fas");
